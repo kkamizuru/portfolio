@@ -1,7 +1,469 @@
-<html>
-    <head>
-    </head>
-    <body>
-        Github Pages Sample
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>KOICHI KAMIZURU'S PORTFOLIO</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Overlock:ital@1&display=swap" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+<header id="top">
+    <div class="navbar-fixed">
+        <nav class="lighten-1" role="navigation">
+            <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo blue-text text-darken-1">PORTFOLIO</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#top" class="scroll">トップ</a></li>
+                    <li><a href="#about-website" class="scroll">このサイトについて</a></li>
+                    <li><a href="#about-me" class="scroll">私について</a></li>
+                    <li class="dropdown"><a href="#portfolio" class="scroll">ポートフォリオ</a>
+                        <ul class="dropdown-list">
+                            <li><a href="#portfolio" class="scroll">制作物</a></li>
+                            <li><a href="#skills" class="scroll">スキル</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact" class="scroll">連絡先</a></li>
+                </ul>
+                <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<div id="banner" class="section valign-wrapper">
+    <div class="container">
+        <div class="row center">
+            <h1 class="col s12 text-lighten-2">KOICHI KAMIZURU'S<br>PORTFOLIO</h1>
+            <h5>WEB DEVELOPER</h5>
+        </div>
+    </div>
+</div>
+
+<div id="about-website" class="section valign-wrapper">
+    <div class="container">
+        <h2 class="header center">About this website</h2>
+        <div class="row center">
+            <p class="grey-text text-darken-3">このサイトへご興味を持って頂きありがとうございます。<br>このサイトは福岡のベンチャーで働く船釣りと南国が好きなWebエンジニア、KOICHI KAMIZURUのポートフォリオサイトです。<br>このサイトでは、私がこれまでに習得したスキルや制作物をまとめています。<br>どうぞごゆっくりご覧ください。</p>
+        </div>
+    </div>
+</div>
+
+<div id="about-me" class="section valign-wrapper">
+    <div class="container">
+        <h2 class="header center">about me</h2>
+        <div class="row center">
+            <div class="col l4">
+                <img src="img/aboutme.png" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+            </div>
+            <div class="col l8">
+                <table class="striped">
+                    <tbody>
+                    <tr>
+                        <td>名前</td>
+                        <td>上水流 弘一 (KOICHI KAMIZURU)</td>
+                    </tr>
+                    <tr>
+                        <td>出身・育ち</td>
+                        <td>福岡県福岡市</td>
+                    </tr>
+                    <tr>
+                        <td>学歴</td>
+                        <td>麻生情報ビジネス専門学校 情報工学科</td>
+                    </tr>
+                    <tr>
+                        <td>生年月日</td>
+                        <td>1988年12月10日</td>
+                    </tr>
+                    <tr>
+                        <td>趣味</td>
+                        <td>船釣り、フォートナイト</td>
+                    </tr>
+                    <tr>
+                        <td>所属会社</td>
+                        <td><a href="https://bluestyle.jp/" target="_blank" rel="noopener">株式会社BLUE STYLE</a></td>
+                    </tr>
+                    <tr>
+                        <td>GitHub</td>
+                        <td><a href="https://github.com/kkamizuru" target="_blank" rel="noopener">https://github.com/kkamizuru</a></td>
+                    </tr>
+                    <tr>
+                        <td>Qiita</td>
+                        <td><a href="https://qiita.com/kkamizuru" target="_blank" rel="noopener">https://qiita.com/kkamizuru</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <br><br>
+    </div>
+</div>
+
+<div id="portfolio" class="section valign-wrapper">
+    <div class="container">
+        <h2 class="header center">Portfolio</h2>
+        <div class="row">
+            <div class="col s12">
+                <p class="center">私がこれまでに世に出した制作物の一部をご紹介致します。</p>
+            </div>
+
+            <div class="col s12 m4">
+                <a class="modal-trigger" href="#modal-portfolio">
+                    <div class="card hoverable">
+                        <div class="card-image">
+                            <img src="img/portfolio_01.png">
+                        </div>
+                    </div>
+                </a>
+                <h5 class="center grey-text text-darken-4">KOICHI KAMIZURU'S PORTFOLIO</h5>
+            </div>
+
+            <div class="col s12 m4">
+                <a class="modal-trigger" href="#modal-buzzlure">
+                    <div class="card hoverable">
+                        <div class="card-image">
+                            <img src="img/buzzlure_01.png">
+                        </div>
+                    </div>
+                </a>
+                <h5 class="center grey-text text-darken-4">BUZZ LURE</h5>
+            </div>
+
+            <div class="col s12 m4">
+                <a class="modal-trigger" href="#modal-noshioption">
+                    <div class="card hoverable">
+                        <div class="card-image">
+                            <img src="img/noshioption_01.png">
+                        </div>
+                    </div>
+                </a>
+                <h5 class="center grey-text text-darken-4">NOSHI OPTION</h5>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-portfolio" class="modal">
+        <div class="modal-content">
+            <div class="row">
+                <div class="col l6 s12">
+                    <section>
+                        <div class="col s4 m2 l2">
+                            <div class="card card-thumbnails waves-effect waves-light modal-thumbnails" data-mainimage="portfolio-mainimage">
+                                <div class="card-image thumbnails">
+                                    <img class="responsive-img z-depth-3" src="img/portfolio_01.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s4 m2 l2">
+                            <div class="card card-thumbnails waves-effect waves-light modal-thumbnails" data-mainimage="portfolio-mainimage">
+                                <div class="card-image thumbnails">
+                                    <img class="responsive-img z-depth-3" src="img/portfolio_02.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s4 m2 l2">
+                            <div class="card card-thumbnails waves-effect waves-light modal-thumbnails" data-mainimage="portfolio-mainimage">
+                                <div class="card-image thumbnails">
+                                    <img class="responsive-img z-depth-3" src="img/portfolio_03.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s4 m2 l2">
+                            <div class="card card-thumbnails waves-effect waves-light modal-thumbnails" data-mainimage="portfolio-mainimage">
+                                <div class="card-image thumbnails">
+                                    <img class="responsive-img z-depth-3" src="img/portfolio_04.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 no-padding">
+                            <h5>KOICHI KAMIZURU'S PORTFOLIO</h5>
+                            <img id="portfolio-mainimage" class="responsive-img z-depth-3" src="img/portfolio_01.png">
+                        </div>
+                    </section>
+                </div>
+                <div class="col l6 s12">
+                    <div class="card-panel alcaramel" style="min-height: 640px;">
+                        <h6>DETAILS</h6>
+                        <hr>
+                        <p>このポートフォリオサイトです。CSSは苦手分野ですが、せっかく作るなら綺麗なサイトを作りたかったのでMaterializeフレームワークを使用しました。割といい感じなポートフォリオに仕上がったかなと思っております。GitHub Pagesに載せた静的ウェブサイトなので維持費は完全無料です。Contactフォームには、入力頂いた内容をGoogleAppsScriptで私のメールアドレスへ転送するようにしています。</p>
+                        <span class="detail-title"><i class="material-icons dp48">create</i>言語・フレームワーク</span>
+                        <p>HTML/CSS, JavaScript, Materialize, Chart.js, GoogleAppsScript</p>
+                        <hr>
+                        <span class="detail-title"><i class="material-icons dp48">cloud_queue</i>インフラ・ホスティング</span>
+                        <p>GitHub Pages</p>
+                        <hr>
+                        <span class="detail-title"><i class="material-icons dp48">business_center</i>ツール</span>
+                        <p>GitHub</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-light btn blue lighten-2">閉じる</a>
+        </div>
+    </div>
+
+    <div id="modal-buzzlure" class="modal">
+        <div class="modal-content">
+            <div class="row">
+                <div class="col l6 s12">
+                    <section>
+                        <div class="col s4 m2 l2">
+                            <div class="card card-thumbnails waves-effect waves-light modal-thumbnails" data-mainimage="buzzlure-mainimage">
+                                <div class="card-image thumbnails">
+                                    <img class="responsive-img z-depth-3 " src="img/buzzlure_01.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s4 m2 l2">
+                            <div class="card card-thumbnails waves-effect waves-light modal-thumbnails" data-mainimage="buzzlure-mainimage">
+                                <div class="card-image thumbnails">
+                                    <img class="responsive-img z-depth-3" src="img/buzzlure_02.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s4 m2 l2">
+                            <div class="card card-thumbnails waves-effect waves-light modal-thumbnails" data-mainimage="buzzlure-mainimage">
+                                <div class="card-image thumbnails">
+                                    <img class="responsive-img z-depth-3" src="img/buzzlure_03.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s4 m2 l2">
+                            <div class="card card-thumbnails waves-effect waves-light modal-thumbnails" data-mainimage="buzzlure-mainimage">
+                                <div class="card-image thumbnails">
+                                    <img class="responsive-img z-depth-3" src="img/buzzlure_04.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s4 m2 l2">
+                            <div class="card card-thumbnails waves-effect waves-light modal-thumbnails" data-mainimage="buzzlure-mainimage">
+                                <div class="card-image thumbnails">
+                                    <img class="responsive-img z-depth-3" src="img/buzzlure_05.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 no-padding">
+                            <h5>BUZZ LURE - バズルアー</h5>
+                            <img id="buzzlure-mainimage" class="responsive-img z-depth-3" src="img/buzzlure_01.png">
+                        </div>
+                    </section>
+                </div>
+                <div class="col l6 s12">
+                    <div class="card-panel alcaramel" style="min-height: 640px;">
+                        <h6>DETAILS</h6>
+                        <hr>
+                        <p>ルアーフィッシングを愛する全ての釣り人へ捧げる個人開発Webサービスです。ルアーごとにどんな魚が釣れているかを見ることができます。データはAmazonからルアーランキングを取得し、Instagramでそのルアー名称のハッシュタグが付いている画像を取得しています。個人開発ということで、とにかく無料にこだわりました。独自ドメイン以外は全て無料で稼働しています。まだまだ改良の余地有りで、随時カスタマイズしています。</p>
+                        <span class="detail-title"><i class="material-icons dp48">create</i>言語・フレームワーク</span>
+                        <p>PHP, HTML/CSS, JavaScript, Laravel7, Vue.js, Bootstrap4</p>
+                        <hr>
+                        <span class="detail-title"><i class="material-icons dp48">https</i>WebAPI</span>
+                        <p>Product Advertising API 5.0, Instagram Graph API</p>
+                        <hr>
+                        <span class="detail-title"><i class="material-icons dp48">storage</i>データベース</span>
+                        <p>PostgreSQL, Redis</p>
+                        <hr>
+                        <span class="detail-title"><i class="material-icons dp48">cloud_queue</i>インフラ・ホスティング</span>
+                        <p>Heroku, Cloudflare</p>
+                        <hr>
+                        <span class="detail-title"><i class="material-icons dp48">business_center</i>ツール</span>
+                        <p>GitHub</p>
+                        <hr>
+                        <span class="detail-title"><i class="material-icons dp48">language</i>Webサイト</span>
+                        <p><a href="https://buzzlure.com/" target="_blank">【BUZZ LURE】本当に釣れるルアー情報サイト - バズルアー</a></p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-light btn blue lighten-2">閉じる</a>
+        </div>
+    </div>
+
+    <div id="modal-noshioption" class="modal">
+        <div class="modal-content">
+            <div class="row">
+                <div class="col l6 s12">
+                    <section>
+                        <div class="col s4 m2 l2">
+                            <div class="card card-thumbnails waves-effect waves-light modal-thumbnails" data-mainimage="noshioption-mainimage">
+                                <div class="card-image thumbnails">
+                                    <img class="responsive-img z-depth-3 " src="img/noshioption_01.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s4 m2 l2">
+                            <div class="card card-thumbnails waves-effect waves-light modal-thumbnails" data-mainimage="noshioption-mainimage">
+                                <div class="card-image thumbnails">
+                                    <img class="responsive-img z-depth-3" src="img/noshioption_02.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s4 m2 l2">
+                            <div class="card card-thumbnails waves-effect waves-light modal-thumbnails" data-mainimage="noshioption-mainimage">
+                                <div class="card-image thumbnails">
+                                    <img class="responsive-img z-depth-3" src="img/noshioption_03.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s4 m2 l2">
+                            <div class="card card-thumbnails waves-effect waves-light modal-thumbnails" data-mainimage="noshioption-mainimage">
+                                <div class="card-image thumbnails">
+                                    <img class="responsive-img z-depth-3" src="img/noshioption_04.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s4 m2 l2">
+                            <div class="card card-thumbnails waves-effect waves-light modal-thumbnails" data-mainimage="noshioption-mainimage">
+                                <div class="card-image thumbnails">
+                                    <img class="responsive-img z-depth-3" src="img/noshioption_05.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 no-padding">
+                            <h5>のしオプション</h5>
+                            <img id="noshioption-mainimage" class="responsive-img z-depth-3" src="img/noshioption_01.png">
+                        </div>
+                    </section>
+                </div>
+                <div class="col l6 s12">
+                    <div class="card-panel alcaramel" style="min-height: 640px;">
+                        <h6>DETAILS</h6>
+                        <hr>
+                        <p>eコマース用プラットフォーム「Shopify」の公開アプリです。注文商品ごとに「のし」を選択可能になります。第一回目のShopifyアプリ開発ということで、フレームワークは慣れ親しんでいるLaravelを採用しスピード重視の開発を行いました。現在はHerokuのhobbyプランで稼働していますが、今後はさくらVPSなどに移設する予定です。</p>
+                        <span class="detail-title"><i class="material-icons dp48">create</i>言語・フレームワーク</span>
+                        <p>PHP, HTML/CSS, JavaScript, Laravel6, Bootstrap4</p>
+                        <hr>
+                        <span class="detail-title"><i class="material-icons dp48">storage</i>データベース</span>
+                        <p>PostgreSQL</p>
+                        <hr>
+                        <span class="detail-title"><i class="material-icons dp48">cloud_queue</i>インフラ・ホスティング</span>
+                        <p>Heroku</p>
+                        <hr>
+                        <span class="detail-title"><i class="material-icons dp48">business_center</i>ツール</span>
+                        <p>GitHub</p>
+                        <hr>
+                        <span class="detail-title"><i class="material-icons dp48">language</i>アプリインストールページ</span>
+                        <p><a href="https://apps.shopify.com/noshi-option?locale=ja&surface_detail=apps-for-japan&surface_inter_position=1&surface_intra_position=13&surface_type=collection" target="_blank">のしオプション</a></p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-light btn blue lighten-2">閉じる</a>
+        </div>
+    </div>
+</div>
+
+<div id="skills" class="section valign-wrapper">
+    <div class="container">
+        <h2 class="header center">Skills</h2>
+        <div class="row">
+            <div class="col s12">
+                <p>
+                    私自身がPHPやJavaScriptの経験が長いのと所属会社がECを強みとしていることもあり、普段はEC-CUBE2系やShopifyなどWeb系のお仕事を主に頂いております。
+                    デザインデータからコーディングするような作業はあまり得意ではない為、コーディング部分については基本的に外部のコーダーさんにお手伝いしてもらっております。
+                    EC-CUBEに関してはCentOS(さくらのVPSを使う事が多いです)構築〜ドメイン、SSL設定まで行うことが多いです。
+                    また、頻度としては少ないですがAndroidアプリの実務経験もアリです。
+                </p>
+            </div>
+
+            <div class="col s12 m4">
+                <canvas id="framework" width="400" height="400"></canvas>
+            </div>
+
+            <div class="col s12 m4">
+                <canvas id="language" width="400" height="400"></canvas>
+            </div>
+
+            <div class="col s12 m4">
+                <canvas id="tool" width="400" height="400"></canvas>
+            </div>
+
+            <div class="col s12 m4">
+                <canvas id="database" width="400" height="400"></canvas>
+            </div>
+
+            <div class="col s12 m4">
+                <canvas id="infrastructure" width="400" height="400"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="contact" class="section valign-wrapper">
+    <div class="container">
+        <h2 class="header center">Contact</h2>
+        <div class="row center">
+            <p class="grey-text text-darken-3">最後までご覧いただきありがとうございました。<br>このサイトを通して私にご興味を持って頂けましたら、メールにてご連絡お待ちしております。<br>お仕事のご依頼ご相談、私やこのサイトについてなど、お気軽にご連絡下さいませ。</p>
+            <div class="row">
+                <div class="input-field col s6 offset-m2 m4">
+                    <input id="name" type="text" class="validate">
+                    <label for="name">お名前</label>
+                </div>
+                <div class="input-field col s6 m4">
+                    <input id="email" type="email" name="email" class="validate" value="">
+                    <label for="email">メールアドレス</label>
+                </div>
+                <div class="input-field col s12 offset-m2 m8">
+                    <textarea id="message" class="materialize-textarea"></textarea>
+                    <label for="message">メッセージ</label>
+                </div>
+            </div>
+            <button type="button" name="sendmail" class="waves-effect waves-light blue lighten-1 btn-large" value="send"><i class="material-icons left">mail_outline</i>SEND</button>
+        </div>
+    </div>
+</div>
+
+<footer class="page-footer blue lighten-3">
+    <div class="container">
+        <div class="row center">
+            <h2 class="header col s12 light">Thank you for coming!</h2>
+        </div>
+    </div>
+    <div class="footer-copyright blue">
+        <div class="container">
+            Copyright © KOICHI KAMIZURU 2020
+        </div>
+    </div>
+</footer>
+
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+<script src="js/init.js"></script>
+
+<ul id="nav-mobile" class="sidenav">
+    <li><div class="user-view">
+        <div class="background">
+            <img src="./img/side-banner.png">
+        </div>
+        <h4 class="white-text">KOICHI KAMIZURU'S<br>PORTFOLIO</h4>
+        <h5 class="white-text">WEB DEVELOPER</h5>
+    </div></li>
+    <li class="bold"><a href="#top" class="waves-effect waves-blue scroll">トップ</a></li>
+    <li class="bold"><a href="#about-website" class="waves-effect waves-blue scroll">このサイトについて</a></li>
+    <li class="bold"><a href="#about-me" class="waves-effect waves-blue scroll">私について</a></li>
+    <li class="bold">
+        <ul class="collapsible collapsible-accordion">
+            <li class="bold"><a class="collapsible-header waves-effect waves-blue" tabindex="0">ポートフォリオ</a>
+                <div class="collapsible-body">
+                    <ul>
+                        <li><a href="#portfolio" class="waves-effect waves-blue scroll">制作物</a></li>
+                        <li><a href="#skills" class="waves-effect waves-blue scroll">スキル</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </li>
+    <li class="bold"><a href="#contact" class="waves-effect waves-blue scroll">連絡先</a></li>
+</ul>
+</body>
 </html>

@@ -1,0 +1,227 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+body {
+  color: #424242;
+  background-image: url(../img/shattered.png);
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+p {
+  line-height: 2rem;
+}
+
+h1, h2, h3, h4, h5, .brand-logo {
+  font-family: 'Overlock', cursive;
+}
+
+/* -----Footer----- */
+.page-footer h2 {
+  margin: 10rem 0;
+}
+
+/* -----navbar----- */
+nav ul a,
+nav {
+  color: #555;
+}
+
+nav {
+  box-shadow: none;
+  background-color: rgba(255,255,255,.7);
+}
+
+nav a {
+  color: #1E88E5;
+}
+
+nav ul li a {
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  -webkit-backface-visibility:hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+
+nav ul li a:hover {
+  color: #fff;
+  background-color: #90caf9;
+}
+
+/* -----sidenav----- */
+.sidenav .collapsible-header, .sidenav.fixed .collapsible-header {
+  padding: 0 30px;
+}
+
+.sidenav .collapsible-body li a, .sidenav.fixed .collapsible-body li a {
+  padding: 0 37.5px 0 45px;
+}
+
+/* -----waves-effect----- */
+.waves-effect.waves-blue .waves-ripple {
+  background-color: #90caf9;
+}
+
+/* -----dropdown----- */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-list {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  top: 90%;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  -webkit-backface-visibility:hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+
+.dropdown-list li {
+  width: 100%;
+}
+
+.dropdown:hover .dropdown-list {
+  visibility: visible;
+  opacity: 1;
+  top: 100%;
+}
+
+/* -----Card----- */
+.card .card-image img {
+  object-fit: cover;
+  height: 217px;
+}
+
+.card-thumbnails {
+  width: 85px;
+  height: 85px;
+}
+.card-thumbnails .card-image img {
+  object-fit: cover;
+  width: 85px;
+  height: 85px;
+  border-radius: 0px;
+}
+
+/* -----Banner, Section----- */
+#banner {
+  min-height: 400px;
+  line-height: 0;
+  height: calc(100vh - 64px);
+  color: #fff;
+  /*background-color: #90caf9;*/
+  background: linear-gradient(90deg,rgba(255,255,255,.1) 0,rgba(255,255,255,.1) 100%),url(../img/banner.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#banner h1 {
+  line-height: 5.5rem;
+}
+
+#banner h5 {
+  font-size: 2.25em;
+}
+
+.section {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.section:nth-child(2n) {
+  background-color: #fafafa;
+}
+
+/* -----Modal----- */
+.modal {
+  width: 90%;
+  max-height: 90%;
+}
+
+.modal .detail-title {
+  font-weight: 700;
+  display: block;
+}
+
+.modal .detail-title i {
+  vertical-align: bottom;
+  padding-right: 8px;
+}
+
+/* label color */
+.input-field input[type=text],
+.input-field input[type=email],
+.input-field textarea {
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+/* label focus color */
+.input-field input[type=text]:focus + label,
+.input-field input[type=email]:focus + label,
+.input-field textarea:focus + label {
+  color: #039be5 !important;
+}
+.input-field input[type=text]:active,
+.input-field input[type=email]:active,
+.input-field textarea:active {
+  border-bottom: 1px solid #039be5 !important;
+  box-shadow: 0 1px 0 0 #039be5 !important;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus,
+.input-field textarea:focus {
+  border-bottom: 1px solid #039be5 !important;
+  box-shadow: 0 1px 0 0 #039be5 !important;;
+}
+/* valid color */
+.input-field input[type=text].valid,
+.input-field input[type=email].valid,
+.input-field textarea.valid {
+  border-bottom: 1px solid #039be5 !important;
+  box-shadow: 0 1px 0 0 #039be5 !important;
+}
+/* invalid color */
+.input-field input[type=text].invalid,
+.input-field input[type=email].invalid,
+.input-field textarea.invalid {
+  border-bottom: 1px solid #039be5 !important;
+  box-shadow: 0 1px 0 0 #039be5 !important;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #039be5 !important;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+  .modal .modal-content {
+    padding: 12px;
+  }
+
+  .sidenav .user-view {
+    min-height: 200px;
+    margin-bottom: 0px;
+  }
+}
