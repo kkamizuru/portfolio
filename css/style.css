@@ -142,6 +142,11 @@ nav ul li a:hover {
   vertical-align: bottom;
   padding-right: 8px; }
 
+.modal .close-button {
+  position: absolute;
+  top: 12px;
+  right: 12px; }
+
 /* Media Queries */
 @media only screen and (max-width: 600px) {
   .modal .modal-content {
