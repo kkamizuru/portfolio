@@ -188,7 +188,7 @@
                     <div class="card-panel alcaramel" style="min-height: 640px;">
                         <h6>DETAILS</h6>
                         <hr>
-                        <p>このポートフォリオサイトです。CSSは苦手分野ですが、せっかく作るなら綺麗なサイトを作りたかったのでMaterializeフレームワークを使用しました。割といい感じなポートフォリオに仕上がったかなと思っております。GitHub Pagesに載せた静的ウェブサイトなので維持費は完全無料です。Contactフォームには、入力頂いた内容をGoogleAppsScriptで私のメールアドレスへ転送するようにしています。</p>
+                        <p>このポートフォリオサイトです。CSSは苦手分野ですが、せっかく作るなら綺麗なサイトを作りたかったのでMaterializeフレームワークを使用しました。割といい感じなポートフォリオに仕上がったかなと思っております。GitHub Pagesに載せた静的ウェブサイトなので維持費は完全無料です。htmlにメールアドレスを埋め込みたくなかったので、ContactのMAILボタンを押すとGoogleAppsScriptで私のメールアドレスを取得しメーラーにセットするようにしています。</p>
                         <span class="detail-title"><i class="material-icons dp48">create</i>言語・フレームワーク</span>
                         <p>HTML/CSS, JavaScript, Materialize, Chart.js, GoogleAppsScript</p>
                         <hr>
@@ -401,22 +401,8 @@
     <div class="container">
         <h2 class="header center">Contact</h2>
         <div class="row center">
-            <p class="grey-text text-darken-3">最後までご覧いただきありがとうございました。<br>このサイトを通して私にご興味を持って頂けましたら、メールにてご連絡お待ちしております。<br>お仕事のご依頼ご相談、私やこのサイトについてなど、お気軽にご連絡下さいませ。</p>
-            <div class="row">
-                <div class="input-field col s6 offset-m2 m4">
-                    <input id="name" type="text" class="validate">
-                    <label for="name">お名前</label>
-                </div>
-                <div class="input-field col s6 m4">
-                    <input id="email" type="email" name="email" class="validate" value="">
-                    <label for="email">メールアドレス</label>
-                </div>
-                <div class="input-field col s12 offset-m2 m8">
-                    <textarea id="message" class="materialize-textarea"></textarea>
-                    <label for="message">メッセージ</label>
-                </div>
-            </div>
-            <button type="button" name="sendmail" class="waves-effect waves-light blue lighten-1 btn-large" value="send"><i class="material-icons left">mail_outline</i>SEND</button>
+            <p class="grey-text text-darken-3">最後までご覧いただきありがとうございました。<br>このサイトを通して私にご興味を持って頂けましたら、メールにてご連絡お待ちしております。<br>お仕事のご依頼ご相談、私やこのサイトについてなど、お気軽にご連絡下さいませ。<br>下のボタンをクリックするとメーラーが起動します。</p>
+            <button type="button" name="sendmail" class="waves-effect waves-light blue lighten-1 btn-large" value="send"><i class="material-icons left">mail_outline</i>MAIL</button>
         </div>
     </div>
 </div>

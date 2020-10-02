@@ -24,48 +24,13 @@ $(function () {
     });
 
     $('button[name="sendmail"]').on('click',function() {
-        if (!$('#name').val()) {
-            M.toast({
-                html: 'お名前をご入力下さい。',
-                classes: 'red lighten-1',
-                displayLength: 6000
-            })
-            return;
-        }
-
-        if (!$('#email').val()) {
-            M.toast({
-                html: 'メールアドレスをご入力下さい。',
-                classes: 'red lighten-1',
-                displayLength: 6000
-            })
-            return;
-        }
-
-        if (!$('#message').val()) {
-            M.toast({
-                html: 'メッセージをご入力下さい。',
-                classes: 'red lighten-1',
-                displayLength: 6000
-            })
-            return;
-        }
-
         $.ajax({
             type: 'POST',
             url: 'https://script.google.com/macros/s/AKfycbyTVDmtnxcMh11xjBhtvWrOTmaBqnu6Vl5nugHbG2GttxBq7AI/exec',
-            data: {
-                'name': $('#name').val(),
-                'email': $('#email').val(),
-                'message': $('#message').val(),
-            },
-            dataType: 'html',
-        }).done(function (data) {
-            M.toast({
-                html: 'この度はお問合せ頂きありがとうございます!!<br>内容を確認後、ご連絡させて頂きます。',
-                classes: 'blue lighten-1',
-                displayLength: 6000
-            })
+            data: {},
+            dataType: 'json',
+        }).done(function (address) {
+            location.href = 'mailto:' + address;
         }).fail(function (err) {
         });
     });

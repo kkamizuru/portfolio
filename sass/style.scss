@@ -169,51 +169,6 @@ nav ul li a:hover {
   padding-right: 8px;
 }
 
-/* label color */
-.input-field input[type=text],
-.input-field input[type=email],
-.input-field textarea {
-  font-size: 1rem;
-  background-color: rgba(255, 255, 255, 0.5);
-}
-/* label focus color */
-.input-field input[type=text]:focus + label,
-.input-field input[type=email]:focus + label,
-.input-field textarea:focus + label {
-  color: #039be5 !important;
-}
-.input-field input[type=text]:active,
-.input-field input[type=email]:active,
-.input-field textarea:active {
-  border-bottom: 1px solid #039be5 !important;
-  box-shadow: 0 1px 0 0 #039be5 !important;
-}
-/* label underline focus color */
-.input-field input[type=text]:focus,
-.input-field input[type=email]:focus,
-.input-field textarea:focus {
-  border-bottom: 1px solid #039be5 !important;
-  box-shadow: 0 1px 0 0 #039be5 !important;;
-}
-/* valid color */
-.input-field input[type=text].valid,
-.input-field input[type=email].valid,
-.input-field textarea.valid {
-  border-bottom: 1px solid #039be5 !important;
-  box-shadow: 0 1px 0 0 #039be5 !important;
-}
-/* invalid color */
-.input-field input[type=text].invalid,
-.input-field input[type=email].invalid,
-.input-field textarea.invalid {
-  border-bottom: 1px solid #039be5 !important;
-  box-shadow: 0 1px 0 0 #039be5 !important;
-}
-/* icon prefix focus color */
-.input-field .prefix.active {
-  color: #039be5 !important;
-}
-
 /* Media Queries */
 @media only screen and (max-width: 600px) {
   .modal .modal-content {
