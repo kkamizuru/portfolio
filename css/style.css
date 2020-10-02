@@ -142,6 +142,9 @@ nav ul li a:hover {
   vertical-align: bottom;
   padding-right: 8px; }
 
+.modal .mainimage {
+  min-height: 480px; }
+
 .modal .close-button {
   position: absolute;
   top: 12px;
@@ -151,6 +154,9 @@ nav ul li a:hover {
 @media only screen and (max-width: 600px) {
   .modal .modal-content {
     padding: 12px; }
+
+  .modal .mainimage {
+    min-height: 300px; }
 
   .sidenav .user-view {
     min-height: 200px;
