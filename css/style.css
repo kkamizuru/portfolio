@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Custom Stylesheet */
 /**
  * Use this file to override Materialize files so you can update
@@ -21,7 +22,7 @@ p {
   line-height: 2rem; }
 
 h1, h2, h3, h4, h5, .brand-logo {
-  font-family: 'Overlock', cursive; }
+  font-family: 'Overlock', "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Meiryo, cursive; }
 
 /* -----Footer----- */
 .page-footer h2 {
